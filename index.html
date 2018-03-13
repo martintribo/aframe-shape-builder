@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+    <!-- Import A-Frame separately because it is hugely bloated in npm. Also use local copy for offline work-->
+    <script src="ext/aframe-v0.8.0.js"></script>
+    <script src="main.js"></script>
+    <meta charset="utf-8">
+    <title>A-Frame Shape Builder</title>
+    <meta name="description" content="Webpage for A-Frame Shape Builder">
+</head>
+<body> 
+    <a-scene cursor="rayOrigin: mouse">
+        <a-entity builder-container>
+            <!-- <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box> -->
+            <!-- <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere> -->
+            <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
+            <!-- <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane> -->
+        </a-entity>
+        <a-sky color="#ECECEC"></a-sky>
+    </a-scene>
+</body>
+</html>

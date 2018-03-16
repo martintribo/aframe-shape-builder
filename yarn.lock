@@ -27,6 +27,10 @@ acorn@^5.0.0:
   version "5.5.3"
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-5.5.3.tgz#f473dd47e0277a08e28e9bec5aeeb04751f0b8c9"
 
+aframe-dev-components@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/aframe-dev-components/-/aframe-dev-components-1.0.0.tgz#f9a43fa25ea67dab2e13b5869a9115dae06aae94"
+
 aframe-gridhelper-component@^0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/aframe-gridhelper-component/-/aframe-gridhelper-component-0.2.0.tgz#45d5250ff7e41ccbb3256c1cc0eefc80dfc7a3d8"

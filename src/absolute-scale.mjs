@@ -20,6 +20,5 @@ AFRAME.registerComponent('absolute-scale', {
             this.data.y / parentScale.y,
             this.data.z / parentScale.z
         );
-        console.log('scale ' + parentScale.x + ' ' + parentScale.x / 1 * this.data.x);
     }
   });

@@ -12,11 +12,13 @@ AFRAME.registerComponent('builder-node', {
         this.grid = document.createElement('a-entity');
         this.grid.setAttribute('absolute-scale', '1 1 1');
         this.el.appendChild(this.grid);
+        this.el.setAttribute('transform-controls');
         this.isActive = false;
     },
     remove: function () {
         this.system.register(this);
         this.el.removeChild(this.grid);
+        this.el.removeAttribute('transform-controls');
     },
     adjustScale: function (x, y, z) {
         x = x || 0;
@@ -31,13 +33,15 @@ AFRAME.registerComponent('builder-node', {
     },
     onActive: function () {
         this.isActive = true;
-        this.grid.setAttribute('gridhelper', '');
-        this.grid.setAttribute('axis-helper', '');
+        // this.grid.setAttribute('gridhelper', '');
+        // this.grid.setAttribute('axis-helper', '');
+        this.el.setAttribute('transform-controls', '');
     },
     onInactive: function () {
         this.isActive = false;
-        this.grid.removeAttribute('gridhelper');
-        this.grid.removeAttribute('axis-helper');
+        // this.grid.removeAttribute('gridhelper');
+        // this.grid.removeAttribute('axis-helper');
+        this.el.removeAttribute('transform-controls');
     }
 });
 

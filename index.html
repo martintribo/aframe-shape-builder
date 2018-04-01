@@ -3,15 +3,26 @@
 <head>
     <!-- Import A-Frame separately because it is hugely bloated in npm. Also use local copy for offline work-->
     <script src="ext/aframe-v0.8.0.js"></script>
+    <script src="ext/aframe-material.js"></script>
     <script src="main.js"></script>
     <meta charset="utf-8">
     <title>A-Frame Shape Builder</title>
     <meta name="description" content="Webpage for A-Frame Shape Builder">
 </head>
-<body> 
+<body>
     <a-scene cursor="rayOrigin: mouse">
+        <a-camera wasd-controls look-controls position="0 2 0">
+            <a-entity cursor="rayOrigin: mouse"></a-entity>
+                <!-- BEGIN INPUTS/KEYBOARD -->
+                    <!-- <a-keyboard></a-keyboard> -->
+                    <!-- <a-form>
+                        <a-input position="-0.7 1 -2.5" placeholder="Username" color="black" width="1"></a-input>
+                        <a-input position="-0.7 0.8 -2.5" type="password" placeholder="Password" color="black" width="1"></a-input>
+                    </a-form> -->
+                <!-- END INPUTS/KEYBOARD -->
+        </a-camera>
+        <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9" transform-controls></a-box>
         <a-entity builder-container>
-            <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
             <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
             <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
         </a-entity>
